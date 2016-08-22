@@ -1,4 +1,4 @@
-package com.eightstudio.danboru.siasat;
+package com.eightstudio.danboru.siasat.animation;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -26,7 +26,7 @@ public class SquareFrameLayout extends FrameLayout {
                 getDefaultSize(0, heightMeasureSpec));
 
         int childWidthSize = getMeasuredWidth();
-        // 高度和宽度一样
+
         heightMeasureSpec = widthMeasureSpec = MeasureSpec.makeMeasureSpec(
                 childWidthSize, MeasureSpec.EXACTLY);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);

@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:background="@color/colorBg">
 
-        <com.eightstudio.danboru.siasat.LoginLoadingView
+        <com.eightstudio.danboru.siasat.animation.LoginLoadingView
             android:id="@+id/login_view"
             android:layout_width="150dp"
             android:layout_height="@dimen/bar_height"

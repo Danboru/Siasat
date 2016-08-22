@@ -1,4 +1,4 @@
-package com.eightstudio.danboru.siasat;
+package com.eightstudio.danboru.siasat.animation;
 
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
@@ -11,33 +11,23 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
-/**
- * 作者： 巴掌 on 16/8/19 09:00
- * Github: https://github.com/JeasonWong
- */
+import com.eightstudio.danboru.siasat.R;
+
+
 public class LoginLoadingView extends View {
 
-    //正常状态
-    public static final int STATUS_LOGIN = 0;
-    //正在登录中
-    public static final int STATUS_LOGGING = 1;
-    //登录成功
-    public static final int STATUS_LOGIN_SUCCESS = 2;
 
+    public static final int STATUS_LOGIN = 0;
+    public static final int STATUS_LOGGING = 1;
+    public static final int STATUS_LOGIN_SUCCESS = 2;
     private int mWidth, mHeight;
     private Paint mPaint;
-
     private int mDuration;
     private int mStatus = STATUS_LOGIN;
-    //下方线条长度
     private float mLineWidth;
-    //成功Text的x坐标
     private float mSuccessTextX;
-    //成功Text的文案
     private String mSuccessText = "SUCCESS";
-    //登录Text的文案
     private String mLoginText = "SIGN UP";
-    //登录Text的alpha值
     private int mLoginTextAlpha;
 
     public LoginLoadingView(Context context, AttributeSet attrs) {
@@ -89,11 +79,6 @@ public class LoginLoadingView extends View {
         }
     }
 
-    /**
-     * 设置状态
-     *
-     * @param status 状态
-     */
     public void setStatus(int status) {
         mStatus = status;
         switch (status) {
@@ -109,9 +94,6 @@ public class LoginLoadingView extends View {
         }
     }
 
-    /**
-     * 启动登录动画
-     */
     private void startLoggingAnim() {
         ValueAnimator animator = ValueAnimator.ofFloat(0, getTextWidth(mLoginText));
         animator.setDuration(1000);
@@ -128,9 +110,6 @@ public class LoginLoadingView extends View {
         animator.start();
     }
 
-    /**
-     * 启动登录成功动画
-     */
     private void startLoginSuccessAnim() {
         ValueAnimator textXAnim = ValueAnimator.ofFloat(0, (mWidth - getTextWidth(mSuccessText)) / 2);
         textXAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

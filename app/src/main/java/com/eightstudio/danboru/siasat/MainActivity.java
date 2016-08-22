@@ -14,11 +14,16 @@ package com.eightstudio.danboru.siasat;
         import android.view.View;
         import android.view.ViewAnimationUtils;
         import android.view.ViewTreeObserver;
+        import android.view.Window;
+        import android.view.WindowManager;
         import android.view.animation.AccelerateDecelerateInterpolator;
         import android.view.animation.DecelerateInterpolator;
         import android.view.animation.LinearInterpolator;
         import android.widget.FrameLayout;
         import android.widget.ImageView;
+
+        import com.eightstudio.danboru.siasat.adapter.CommonAdapter;
+        import com.eightstudio.danboru.siasat.animation.LoginLoadingView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main);
 
         mFrtContent = (FrameLayout) findViewById(R.id.frt_content);

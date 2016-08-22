@@ -1,11 +1,8 @@
-package com.eightstudio.danboru.siasat;
+package com.eightstudio.danboru.siasat.animation;
 
 import android.content.Context;
 
-/**
- * 作者： 巴掌 on 16/8/18 22:27
- * Github: https://github.com/JeasonWong
- */
+
 public class DensityUtil {
 
     private DensityUtil(){}

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SignUpTransition</string>
+    <string name="siasat">SIASAT</string>
+
 </resources>

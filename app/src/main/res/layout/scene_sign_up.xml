@@ -82,7 +82,7 @@
             android:background="@color/colorBg">
 
 
-            <com.eightstudio.danboru.siasat.LoginLoadingView
+            <com.eightstudio.danboru.siasat.animation.LoginLoadingView
                 android:id="@+id/login_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
