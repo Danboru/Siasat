@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Padding dan margin untuk logo siasat di bagian SplashScreen. -->
+    <dimen name="bagian_atas_siasat">10dp</dimen>
+    <dimen name="bagian_bawah_siasat">10dp</dimen>
+    <dimen name="bagian_kanan_siasat">40dp</dimen>
+    <dimen name="bagian_kiri_siasat">40dp</dimen>
+
+</resources>
