@@ -26,8 +26,8 @@ public class LoginLoadingView extends View {
     private int mStatus = STATUS_LOGIN;
     private float mLineWidth;
     private float mSuccessTextX;
-    private String mSuccessText = "SUCCESS";
-    private String mLoginText = "SIGN UP";
+    private String mSuccessText = "BERHASIL";
+    private String mLoginText = "MASUK";
     private int mLoginTextAlpha;
 
     public LoginLoadingView(Context context, AttributeSet attrs) {
@@ -112,6 +112,7 @@ public class LoginLoadingView extends View {
 
     private void startLoginSuccessAnim() {
         ValueAnimator textXAnim = ValueAnimator.ofFloat(0, (mWidth - getTextWidth(mSuccessText)) / 2);
+
         textXAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -120,6 +121,7 @@ public class LoginLoadingView extends View {
         });
 
         ValueAnimator alphaAnim = ValueAnimator.ofInt(255, 0);
+
         alphaAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {

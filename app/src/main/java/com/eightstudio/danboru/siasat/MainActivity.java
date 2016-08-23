@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mFrtContent = (FrameLayout) findViewById(R.id.frt_content);
         mDuration = getResources().getInteger(R.integer.duration);
 
-        mSceneSignUp = Scene.getSceneForLayout(mFrtContent, R.layout.scene_sign_up, this);
+        mSceneSignUp = Scene.getSceneForLayout(mFrtContent, R.layout.scene_sign, this);
         mSceneSignUp.setEnterAction(new Runnable() {
             @Override
             public void run() {

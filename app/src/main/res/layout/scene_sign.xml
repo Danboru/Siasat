@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Masuk"
             android:textSize="38sp"
             android:textColor="@color/colorBg"/>
 
@@ -24,30 +24,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textSize="14sp"
-            android:text="Have an account?"/>
+            android:text="Harap masuk terlebih dahulu"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textColor="@color/colorBg"
-            android:text="Name"/>
+            android:text="NIM"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="JeasonWong"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorBg"
-            android:text="Email"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="wangyuwei.me@foxmail.com"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,20 +47,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="123456"
-            android:inputType="textPassword"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorBg"
-            android:text="Confirm Password"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="123456"
-            android:inputType="textPassword"/>
+            />
 
         <RelativeLayout
             android:id="@+id/rlt_bg"
