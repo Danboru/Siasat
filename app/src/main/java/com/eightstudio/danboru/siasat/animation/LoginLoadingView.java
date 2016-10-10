@@ -62,10 +62,12 @@ public class LoginLoadingView extends View {
             case STATUS_LOGIN:
                 canvas.drawText(mLoginText, (mWidth - getTextWidth(mLoginText)) / 2, (mHeight + getTextHeight(mLoginText)) / 2, mPaint);
                 break;
+
             case STATUS_LOGGING:
                 canvas.drawText(mLoginText, (mWidth - getTextWidth(mLoginText)) / 2, (mHeight + getTextHeight(mLoginText)) / 2, mPaint);
                 canvas.drawLine((mWidth - getTextWidth(mLoginText)) / 2, mHeight, (mWidth - getTextWidth(mLoginText)) / 2 + mLineWidth, mHeight, mPaint);
                 break;
+
             case STATUS_LOGIN_SUCCESS:
                 mPaint.setAlpha(mLoginTextAlpha);
                 canvas.drawText(mLoginText, mSuccessTextX + getTextWidth(mSuccessText) + DensityUtil.dp2px(getContext(), 10), (mHeight + getTextHeight(mLoginText)) / 2, mPaint);

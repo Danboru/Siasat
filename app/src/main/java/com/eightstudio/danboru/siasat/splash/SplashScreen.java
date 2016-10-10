@@ -35,7 +35,7 @@ public class SplashScreen extends Activity {
 
                     /**
                      *
-                     * ini bagian penganan saat terjadi kesalahan
+                     * ini bagian penanganan saat terjadi kesalahan
                      * sering terjadi kesalahan dalam set Time
                      * Duration dalam satuan milisecon
                      *

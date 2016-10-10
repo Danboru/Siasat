@@ -1,3 +1,4 @@
+//Bismillah Hirrohman Nirrohim
 package com.eightstudio.danboru.siasat;
 
         import android.animation.Animator;
@@ -21,6 +22,7 @@ package com.eightstudio.danboru.siasat;
         import android.view.animation.LinearInterpolator;
         import android.widget.FrameLayout;
         import android.widget.ImageView;
+        import android.widget.Toast;
 
         import com.eightstudio.danboru.siasat.adapter.CommonAdapter;
         import com.eightstudio.danboru.siasat.animation.LoginLoadingView;
@@ -94,30 +96,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         mSceneMain = Scene.getSceneForLayout(mFrtContent, R.layout.scene_main, this);
-        mSceneMain.setEnterAction(new Runnable() {
-            @Override
-            public void run() {
-                final ImageView imgMenu = (ImageView) mFrtContent.findViewById(R.id.img_menu);
-                final ImageView imgUser = (ImageView) mFrtContent.findViewById(R.id.img_user);
-                ValueAnimator animator = ValueAnimator.ofInt(0, 255);
-                animator.setDuration(mDuration);
-                animator.setInterpolator(new LinearInterpolator());
-                animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                    @Override
-                    public void onAnimationUpdate(ValueAnimator animation) {
-                        int alpha = (int) animation.getAnimatedValue();
-                        imgMenu.setImageAlpha(alpha);
-                        imgUser.setImageAlpha(alpha);
-                    }
-                });
-                animator.start();
-
-                final RecyclerView recyclerView = (RecyclerView) mFrtContent.findViewById(R.id.rv_common);
-                CommonAdapter adapter = new CommonAdapter(MainActivity.this);
-                recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this, 3));
-                recyclerView.setAdapter(adapter);
-            }
-        });
 
         TransitionManager.go(mSceneSignUp);
     }
