@@ -22,6 +22,7 @@ package com.eightstudio.danboru.siasat;
         import android.view.animation.LinearInterpolator;
         import android.widget.FrameLayout;
         import android.widget.ImageView;
+        import android.widget.TextView;
         import android.widget.Toast;
 
         import com.eightstudio.danboru.siasat.adapter.CommonAdapter;
@@ -100,7 +101,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TransitionManager.go(mSceneSignUp);
     }
 
+    public void tekanAku(String anu){
 
+        TextView satu = (TextView) findViewById(R.id.anu);
+
+        satu.setText(anu.toString());
+
+    }
 
     private void setSize(int width, int height) {
         mTvSighUpWidth = width;
