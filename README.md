@@ -1,6 +1,6 @@
 # Siasat
 
-Project Latihan Membuat Animasi mengunakan Frame , , , Aplikasi ini hanya berisikan animasi login , , tidak di sertakan menu utama dan menu lainnya, karena fokus dari Repositori ini hanya di bagian animasi LOGIN
+Project Latihan Membuat Animasi mengunakan Canvas , , , Aplikasi ini hanya berisikan animasi login , , tidak di sertakan menu utama dan menu lainnya, karena fokus dari Repositori ini hanya di bagian animasi LOGIN
 
 ##Sample Sourcecode
 ````
